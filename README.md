@@ -17,7 +17,8 @@ npm install almoment
 
 ```sh
 import { format } from "almoment"
-const formatted = format("Sun Aug 07 2021 12:18:37 GMT+0500 (Uzbekistan Standard Time)", "DD-MM-YYYY")
+const stringDate = "Sun Aug 07 2021 12:18:37 GMT+0500 (Uzbekistan Standard Time)"
+const formatted = format(stringDate, "DD-MM-YYYY")
 
 // Output: 07-08-2021
 ```
