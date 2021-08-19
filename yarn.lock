@@ -9316,6 +9316,11 @@
     "micromatch" "^4.0.0"
     "semver" "^7.3.4"
 
+"tsd-webpack-plugin@^1.0.4":
+  "integrity" "sha512-tVwnRQC8MPSg5wl0qMtHtIPy5REiCHXD4DhsNI6k2GpevBz8RDUOwJQR2qGU9RKsZj43wcdRkc1UGMLTobXmfg=="
+  "resolved" "https://registry.npmjs.org/tsd-webpack-plugin/-/tsd-webpack-plugin-1.0.4.tgz"
+  "version" "1.0.4"
+
 "tslib@^1.8.1":
   "integrity" "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
@@ -9413,11 +9418,6 @@
   "integrity" "sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c="
   "resolved" "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   "version" "0.0.6"
-
-"typescript-declaration-webpack-plugin@^0.2.2":
-  "integrity" "sha512-X+97Ahsq13mlIxg9ECseRFi/TtOu2w55wdqijPT63gpe75zhthwqsdKNcf1CdgFDHWefIIGmR/qpAVRf6dl6WQ=="
-  "resolved" "https://registry.npmjs.org/typescript-declaration-webpack-plugin/-/typescript-declaration-webpack-plugin-0.2.2.tgz"
-  "version" "0.2.2"
 
 "typescript@*", "typescript@^4.3.5", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
   "integrity" "sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA=="

@@ -1,18 +1,19 @@
 {
     "compilerOptions": {
       "target": "es5",
-      "module": "es2015",
-      "sourceMap": true,
       "noImplicitAny": false,
       "jsx": "react",
-      "declaration": true
+      "declaration": true,
     },
     "include": [
-      "typings/index.d.ts",
-      "src/**/*"
+      "src/lib/*"
+    ],
+    "files": [
+      "src/lib/index.ts"
     ],
     "exclude": [
       "node_modules",
-      "**/*.spec.ts"
+      "**/*.spec.ts",
+      "dist"
     ]
   }

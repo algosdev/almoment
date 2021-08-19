@@ -2,6 +2,7 @@
 const { merge } = require("webpack-merge");
 const { resolve } = require("path");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TypescriptDeclarationGenerator = require("tsd-webpack-plugin");
 const commonConfig = require("./common");
 module.exports = merge(commonConfig, {
   mode: "production",
@@ -11,7 +12,6 @@ module.exports = merge(commonConfig, {
     path: resolve(__dirname, "../../dist"),
     publicPath: "/",
     umdNamedDefine: true,
-    // library: "almoment",
     libraryTarget: "commonjs",
   },
   module: {
@@ -19,6 +19,9 @@ module.exports = merge(commonConfig, {
       {
         test: [/\.js?$/, /\.tsx?$/, /\.ts?$/],
         use: [
+          {
+            loader: "ts-loader",
+          },
           {
             loader: "babel-loader",
             options: {
@@ -31,6 +34,12 @@ module.exports = merge(commonConfig, {
     ],
   },
   devtool: "source-map",
+  plugins: [
+    new TypescriptDeclarationGenerator({
+      moduleName: "./lib/index.d.ts",
+      out: "./index.d.ts", // The reference here is your output file folder.
+    }),
+  ],
   optimization: {
     minimizer: [new UglifyJsPlugin()],
   },

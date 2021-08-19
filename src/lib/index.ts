@@ -1,2 +1,1 @@
-import { format } from "./format";
-export { format };
+export { format } from "./format";
